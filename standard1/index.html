@@ -1,0 +1,24 @@
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="default.css">
+</head>
+<body>
+        <header>
+            <h1>Elliot Jane Lader's Galvanize Admissions Portfolio</h1>        
+        <nav>
+            <a onclick="goToPage(0)"><strong>Standard One</strong></a> |
+            <a onclick="goToPage(1)"><strong>Standard Two</strong></a> |
+            <a onclick="goToPage(2)"><strong>Standard Three</strong></a>
+        </nav>
+            </header>
+        <iframe id="frame" src="landing.html"></iframe>
+<script>
+    function goToPage(site) {
+        var sites = ["/standards/standard1/index.html",
+                     "/standards/standard2/index.html",
+                     "http://allrecipes.com/personal-recipe/64674783/ellies-exquisite-homemade-mac-and-cheese/"];
+        return document.getElementById("frame").src = sites[site];
+    }
+</script>
+</body>
+</html>
